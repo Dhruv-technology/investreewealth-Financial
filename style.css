@@ -150,7 +150,70 @@ align-content: center;
 #B1{
 font-weight: bold;
     font-size: 30;
-    background-color: cornflowerblue;
+    background-color: red;
      align-content: center;
+	color:white;
+	width:100%;
+}
+#B{
+font-weight: bold;
+    color: red;
+    align-content: center;
+    text-align: center;
+}
+#ABC{
+    align-content:center;
+    text-align: center;
+    height: 70px;
+    width: 600px;
+    font-size: 50px;
+    font-weight: bold;
+    align-self: center;
+
+}
+#CDE{
+    align-content:center;
+    text-align: center;
+    height: 70px;
+    width: 600px;
+    font-size: 50px;
+    font-weight: bold;
+    align-self: center;
+
+}
+#Rama{
+align-content: center;
+    text-align: center;
+    align-self:center; 
+    font-weight:bold;
+    color: red;
+    width: 200px;
+    height: 150px;
+    font-size: 50px;
+    background-color: cornflowerblue;
+}
+#CBA{
+align-content: center;
+    text-align: center;
+}
+#XYZ{
+align-content: center;
+    text-align: center;
+    background-color:deepskyblue;
+}
+#Videos{
+align-content: center;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	background-image:url(Investree%20FInal%20500.png);
+}
+#Whyus{
+	background-image:url(970128-lic.jpg);
+}
+#abxy{
+color: red;
+	font-weight: bold;
+	font-family:inherit;
 }
 ;
