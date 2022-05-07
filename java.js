@@ -1,83 +1,41 @@
-npm install firebase
-npm install - g firebase - tools
-firebase login
-firebase initfirebase deploy
-// Import the functions you need from the SDKs you need
-import {
-	initializeApp
-} from "firebase/app";
-import {
-	getAnalytics
-} from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+var slideIndex = 1;
+showDivs(slideIndex);
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-	apiKey: "AIzaSyBBRXCzQhpG4TPsOd1AaMoryodJkhjGLLM",
-	authDomain: "investreewealth-e6407.firebaseapp.com",
-	databaseURL: "https://investreewealth-e6407-default-rtdb.firebaseio.com",
-	projectId: "investreewealth-e6407",
-	storageBucket: "investreewealth-e6407.appspot.com",
-	messagingSenderId: "18796723473",
-	appId: "1:18796723473:web:911b60f612f43974a0e0b0",
-	measurementId: "G-PY3WLLQCTL"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-	apiKey: "AIzaSyBBRXCzQhpG4TPsOd1AaMoryodJkhjGLLM",
-	authDomain: "investreewealth-e6407.firebaseapp.com",
-	databaseURL: "https://investreewealth-e6407-default-rtdb.firebaseio.com",
-	projectId: "investreewealth-e6407",
-	storageBucket: "investreewealth-e6407.appspot.com",
-	messagingSenderId: "18796723473",
-	appId: "1:18796723473:web:911b60f612f43974a0e0b0",
-	measurementId: "G-PY3WLLQCTL"
+function plusDivs(n) {
+  showDivs(slideIndex += n);
 }
 
-FileInputStream serviceAccount =
-	new FileInputStream("path/to/serviceAccountKey.json");
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+	var slideIndex = 0;
+carousel();
 
-FirebaseOptions options = new FirebaseOptions.Builder()
-	.setCredentials(GoogleCredentials.fromStream(serviceAccount))
-	.setDatabaseUrl("https://investreewealth-e6407-default-rtdb.firebaseio.com")
-	.build();
-
-FirebaseApp.initializeApp(options);;
-
-var admin = require("firebase-admin");
-
-var serviceAccount = require("path/to/serviceAccountKey.json");
-
-admin.initializeApp({
-	credential: admin.credential.cert(serviceAccount),
-	databaseURL: "https://investreewealth-e6407-default-rtdb.firebaseio.com"
-}); {
-	"rules": {
-		".read": false,
-		".write": false
-	}
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
 }
-function.java{
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-
-const auth = getAuth();
-createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // ..
-  })
-	s;
-	
+function validation(){
+var phone-document.forms['myfrm' I'mobileno'];
+var get_num=String(phone.value).charAt(e); var first_num=Number(get_num);
+if(isNaN(phone.value){
+   || phone.value. lengthl-10 || first_num(6)
+alert('Invalid Phone Number'); return false;
+return true;
+}
+function Java(){
+alert('Your phonenumber has been saved you may contact investree wealth for swift and rapid investments')
 }
